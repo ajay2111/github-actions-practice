@@ -1,4 +1,4 @@
-name: my gitlab first workflow
+name: My First GitHub Workflow
 
 on:
   push:
@@ -9,4 +9,4 @@ jobs:
 
     steps:
       - name: Print Message
-      run: echo "Hello github actions"
+        run: echo "Hello GitHub Actions"
