@@ -1,16 +1,19 @@
-name: Multiple Commands
+name: Repositery Download
 
 on:
   push:
 
 jobs:
-  linux-commands:
+  checkout-job:
     runs-on: ubuntu-latest
 
+
     steps:
-      - name: run linux Commands
-        run: |
-          echo "Hello github actions"
-          date
-          pwd 
-          ls
+      - name: checkout Repositery
+        uses: actions/checkout@v4
+
+      - name: Show Current Repositery
+        run: pwd
+
+      - name: List Repositery Files
+        run: ls -la 
