@@ -1,16 +1,3 @@
-name: My First GitHub Workflow
-
-on:
-  push:
-
-jobs:
-  hello-jobs:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Print Message
-        run: echo "Hello GitHub Actions"
-
 name: Multiple Commands
 
 on:
