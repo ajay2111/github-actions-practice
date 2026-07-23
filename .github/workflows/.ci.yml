@@ -10,3 +10,20 @@ jobs:
     steps:
       - name: Print Message
         run: echo "Hello GitHub Actions"
+
+name: Multiple Commands
+
+on:
+  push:
+
+jobs:
+  linux Commands:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: run linux Commands
+        run: |
+          echo "Hello github actions"
+          date
+          pwd 
+          ls
